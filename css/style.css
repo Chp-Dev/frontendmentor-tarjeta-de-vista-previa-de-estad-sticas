@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ :root{
+    --VeryDarkBlue: hsl(233, 47%, 7%);
+    --DarkDesaturatedBlueCard: hsl(244, 38%, 16%);
+    --SoftVioletAccent: hsl(277, 64%, 61%);
+    --White: hsl(0, 0%, 100%);
+    --SlightlyTransparentWhiteP: hsla(0, 0%, 100%, 0.75);
+    --SlightlyTransparentWhiteH: hsla(0, 0%, 100%, 0.6);
+    --Layer: rgba(110,30,160,0.7);
+ }
+ body{
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--VeryDarkBlue);
+ }
+ main{
+    height: 782px;
+    width: 328px;
+    background-color: var(--DarkDesaturatedBlueCard);
+    margin: 88px auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.image{
+    background-image: url(/images/image-header-mobile.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 240px;
+}
+#layer{
+    background-color: var(--Layer);
+    height: 100%;
+    width: 100%;
+}
+.section2{
+    padding: 40px 33px;
+    text-align: center;
+}
+h1{
+    color: var(--White);
+    font-size: 1.8em;
+    font-family: 'Inter', sans-serif;
+    height: 115px;
+}
+span{
+    color: var(--SoftVioletAccent);
+}
+p{
+    color:var(--SlightlyTransparentWhiteP);
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    line-height: 25px;
+    height: 137px;
+}
+.stats{
+    color: var(--SlightlyTransparentWhiteH);
+    line-height: 25px;
+}
+.amount{
+    font-weight: 700px;
+    font-size: 1.45em;
+    color: var(--White);
+}
+.concept{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin-bottom: 33px;
+}
+.last{
+    text-transform: uppercase;
+}
+.attribution { 
+    color: var(--White);
+    font-size: 11px; text-align: center;
+    margin-bottom: 50px;
+}
+.attribution a {
+    color: var(--SoftVioletAccent);
+}
+
+@media screen and (min-width: 1200px){
+    main{
+        width: 1110px;
+        height: 448px;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 178px auto;
+    }
+    .image{
+        width: 540px;
+        height: 100%;
+        background-image: url(/images/image-header-desktop.jpg);
+    }
+    .section2{
+        padding: 75px 75px;
+        text-align: left;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    p{
+        margin-right: 70px;
+    }
+    .stats{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 70px;
+    }
+
+    footer .attribution{
+        margin-top: 130px;
+    }
+}
