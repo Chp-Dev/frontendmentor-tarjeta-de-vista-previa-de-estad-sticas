@@ -121,8 +121,9 @@ p {
 
   footer .attribution {
     margin-top: 130px;
+    margin-bottom: 130px;
   }
   footer .channel {
-    margin-top: 20px; /* Espacio opcional entre los elementos */
+    margin-top: 20px; 
   }
 }
